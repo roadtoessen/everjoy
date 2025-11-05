@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/everjoy/static/css/main.2661ad99.css",
-    "main.js": "/everjoy/static/js/main.473dead8.js",
+    "main.css": "/everjoy/static/css/main.8c91510f.css",
+    "main.js": "/everjoy/static/js/main.3358994d.js",
     "static/js/453.e637566a.chunk.js": "/everjoy/static/js/453.e637566a.chunk.js",
     "static/media/essen-backdrop.png": "/everjoy/static/media/essen-backdrop.ca0dd9d50c7a79de518f.png",
     "static/media/banner-shoppe.png": "/everjoy/static/media/banner-shoppe.02a1e34883569fd38022.png",
@@ -10,20 +10,24 @@
     "static/media/competition-banner.png": "/everjoy/static/media/competition-banner.669d362739ede3839243.png",
     "static/media/brand-collaboration-project-2.png": "/everjoy/static/media/brand-collaboration-project-2.3daf2ce0537abdd1893b.png",
     "static/media/brand-collaboration-project-1.png": "/everjoy/static/media/brand-collaboration-project-1.6883de6ea0ea85739a43.png",
+    "static/media/best_seller_1.png": "/everjoy/static/media/best_seller_1.d6055797b6adc2cdba2b.png",
     "static/media/partners-sponsors.png": "/everjoy/static/media/partners-sponsors.37dd79039edf086b44e6.png",
+    "static/media/best_seller_2.png": "/everjoy/static/media/best_seller_2.5d8cdb28a4109568f6e6.png",
     "static/media/highlight-section.png": "/everjoy/static/media/highlight-section.59946721ba51eaaf3689.png",
+    "static/media/best_seller_3.png": "/everjoy/static/media/best_seller_3.a82c44641fa8ca40c3ad.png",
+    "static/media/best_seller_4.png": "/everjoy/static/media/best_seller_4.1ef0cd3f93c189066c01.png",
     "static/media/journey-image-4.png": "/everjoy/static/media/journey-image-4.ab31fcde791f64d8be3c.png",
     "static/media/journey-image-2.png": "/everjoy/static/media/journey-image-2.21bdeee4805eb8608160.png",
     "static/media/journey-image-1.png": "/everjoy/static/media/journey-image-1.7c3fb4bd90362ff4402e.png",
     "static/media/journey-image-3.png": "/everjoy/static/media/journey-image-3.81d30b4bb113160148ba.png",
     "static/media/road-to-essen.png": "/everjoy/static/media/road-to-essen.c8e54bc6ae7321e8fa21.png",
     "index.html": "/everjoy/index.html",
-    "main.2661ad99.css.map": "/everjoy/static/css/main.2661ad99.css.map",
-    "main.473dead8.js.map": "/everjoy/static/js/main.473dead8.js.map",
+    "main.8c91510f.css.map": "/everjoy/static/css/main.8c91510f.css.map",
+    "main.3358994d.js.map": "/everjoy/static/js/main.3358994d.js.map",
     "453.e637566a.chunk.js.map": "/everjoy/static/js/453.e637566a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2661ad99.css",
-    "static/js/main.473dead8.js"
+    "static/css/main.8c91510f.css",
+    "static/js/main.3358994d.js"
   ]
 }
