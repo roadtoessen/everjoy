@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/everjoy/static/css/main.8c91510f.css",
-    "main.js": "/everjoy/static/js/main.3358994d.js",
+    "main.js": "/everjoy/static/js/main.7a434ef9.js",
     "static/js/453.e637566a.chunk.js": "/everjoy/static/js/453.e637566a.chunk.js",
     "static/media/essen-backdrop.png": "/everjoy/static/media/essen-backdrop.ca0dd9d50c7a79de518f.png",
     "static/media/banner-shoppe.png": "/everjoy/static/media/banner-shoppe.02a1e34883569fd38022.png",
@@ -23,11 +23,11 @@
     "static/media/road-to-essen.png": "/everjoy/static/media/road-to-essen.c8e54bc6ae7321e8fa21.png",
     "index.html": "/everjoy/index.html",
     "main.8c91510f.css.map": "/everjoy/static/css/main.8c91510f.css.map",
-    "main.3358994d.js.map": "/everjoy/static/js/main.3358994d.js.map",
+    "main.7a434ef9.js.map": "/everjoy/static/js/main.7a434ef9.js.map",
     "453.e637566a.chunk.js.map": "/everjoy/static/js/453.e637566a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c91510f.css",
-    "static/js/main.3358994d.js"
+    "static/js/main.7a434ef9.js"
   ]
 }
