@@ -37,6 +37,7 @@ const Gallery = () => {
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [isAnimating, setIsAnimating] = useState(false);
   const itemsPerPage = 3;
 
   // Pagination logic
@@ -44,11 +45,24 @@ const Gallery = () => {
   const currentItems = images.slice(startIndex, startIndex + itemsPerPage);
   const totalPages = Math.ceil(images.length / itemsPerPage);
 
+  // Handle page change with animation
+  const handlePageChange = (pageNumber) => {
+    if (pageNumber === currentPage) return;
+
+    setIsAnimating(true);
+    setTimeout(() => {
+      setCurrentPage(pageNumber);
+      setIsAnimating(false);
+    }, 300);
+  };
+
   return (
     <section className="gallery-section">
       <h2 className="gallery-title">GALLERY</h2>
 
-      <div className="gallery-container">
+      <div
+        className={`gallery-container ${isAnimating ? "fade-out" : "fade-in"}`}
+      >
         {/* Left large image */}
         <div
           className="gallery-main"
@@ -77,9 +91,10 @@ const Gallery = () => {
         {Array.from({ length: totalPages }, (_, i) => (
           <button
             key={i}
-            onClick={() => setCurrentPage(i + 1)}
+            onClick={() => handlePageChange(i + 1)}
             className={`gallery-page-btn ${currentPage === i + 1 ? "active" : ""
               }`}
+            disabled={isAnimating}
           >
             {i + 1}
           </button>
