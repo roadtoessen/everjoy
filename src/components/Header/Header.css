@@ -5,6 +5,7 @@
   margin-top: -140px;
   margin-bottom: 60px;
 }
+
 .hero-container {
   width: 100%;
   background-color: #d9d9d9;
@@ -153,29 +154,6 @@
   flex-wrap: wrap;
 }
 
-.highlight-game-img1,
-.highlight-game-img5 {
-  width: 151px;
-  height: 363px;
-  background-color: #818181;
-  border-radius: 20px;
-}
-
-.highlight-game-img2,
-.highlight-game-img4 {
-  width: 177px;
-  height: 482px;
-  background-color: #818181;
-  border-radius: 20px;
-}
-
-.highlight-game-img3 {
-  width: 242px;
-  height: 618px;
-  background-color: #818181;
-  border-radius: 20px;
-}
-
 /* Mobile menu */
 @media (max-width: 961px) {
   .left-corner {
@@ -216,7 +194,8 @@
   }
 
   .nav-content.open {
-    max-height: 400px; /* menu expands smoothly */
+    max-height: 400px;
+    /* menu expands smoothly */
     opacity: 1;
     pointer-events: auto;
   }
@@ -263,7 +242,9 @@
 
 .nav-link.active,
 .nav-link:hover {
-  color: #ff4500; /* Active color */
+  color: #ff4500;
+  /* Active color */
   font-weight: 500;
-  border-bottom: 2px solid #ff4500; /* Optional underline effect */
+  border-bottom: 2px solid #ff4500;
+  /* Optional underline effect */
 }

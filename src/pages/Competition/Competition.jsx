@@ -5,50 +5,49 @@ import competitionBanner from "../../assets/competition-banner.png";
 import RoadToEssenOverview from "../../components/RoadToEssenOverview/RoadToEssenOverview";
 import JourneyHighlight from "../../components/JourneyHighlight/JourneyHighlight";
 import PartnersCarousel from "../../components/PartnersCarousel/PartnersCarousel";
-import containerImage from "../../assets/Container.png";
 import leftIcon from "../../assets/left-icon.png";
 import rightIcon from "../../assets/right-icon.png";
 import ledRte from "../../assets/led-rte.png";
 import Footer from "../../components/Footer/Footer";
+import julyRuleBook from "../../assets/july_rule_book.png";
+import amBinh from "../../assets/am_binh.png";
+import keCho from "../../assets/ke_cho.png";
+import auLac from "../../assets/au_lac.png";
+import batLinh from "../../assets/bat_linh.png";
+import lapDia from "../../assets/lap_dia.png";
 
 const Competition = () => {
   const finalistData = [
-    {
-      title: "Free Weights",
-      img: containerImage,
-    },
-    {
-      title: "Cardio Machines",
-      img: containerImage,
-    },
-    {
-      title: "Group Exercise Classes",
-      img: containerImage,
-    },
-    {
-      title: "Personal Training",
-      img: containerImage,
-    },
-    {
-      title: "Spin",
-      img: containerImage,
-    },
-    {
-      title: "Yoga",
-      img: containerImage,
-    },
-    {
-      title: "Free Weights",
-      img: containerImage,
-    },
-    {
-      title: "Cardio Machines",
-      img: containerImage,
-    },
-    {
-      title: "Group Exercise Classes",
-      img: containerImage,
-    },
+    [
+      {
+        title: "julyRuleBook",
+        img: julyRuleBook,
+      },
+      {
+        title: "amBinh",
+        img: amBinh,
+      }
+    ],
+    [
+      {
+        title: "keCho",
+        img: keCho,
+      },
+      {
+        title: "auLac",
+        img: auLac,
+      }
+    ],
+    [
+      {
+        title: "batLinh",
+        img: batLinh,
+      },
+      {
+        title: "lapDia",
+        img: lapDia,
+      }
+    ],
   ];
 
   return (
@@ -90,8 +89,8 @@ const Competition = () => {
         <div className="finalists-list">
           {finalistData.map((finalist, index) => (
             <div className="finalists-item" key={index}>
-              <img src={finalist.img} alt="finalists item img" />
-              <p className="finalists-item-title">{finalist.title}</p>
+              <img src={finalist[0].img} alt={finalist[0].title} key={finalist[0].title} />
+              <img src={finalist[1].img} alt={finalist[1].title} key={finalist[1].title} />
             </div>
           ))}
         </div>

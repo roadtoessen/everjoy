@@ -10,3 +10,11 @@
   width: 100%;
   margin-top: 60px;
 }
+
+.highlight-games img {
+  transition: transform 0.3s ease;
+}
+
+.highlight-games img:hover {
+  transform: scale(1.1);
+}
