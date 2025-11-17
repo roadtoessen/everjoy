@@ -9,7 +9,7 @@
 }
 
 .form-container {
-    background-color: #CCCCCC;
+    background-color: #cccccc;
     padding: 20px;
     border-radius: 50px;
     width: 60%;
@@ -46,6 +46,42 @@ label {
     border-radius: 40px;
     font-size: 14px;
     border: 1px solid black;
+    color: #333;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+/* Placeholder styling for all inputs and textarea */
+.input-text::placeholder,
+.input-textarea::placeholder {
+    color: #888;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.input-text::-webkit-input-placeholder,
+.input-textarea::-webkit-input-placeholder {
+    color: #888;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.input-text::-moz-placeholder,
+.input-textarea::-moz-placeholder {
+    color: #888;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.input-text:-ms-input-placeholder,
+.input-textarea:-ms-input-placeholder {
+    color: #888;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    opacity: 1;
 }
 
 .input-textarea {
@@ -91,6 +127,9 @@ label {
     align-items: center;
     background-color: #fff;
     border: 1px solid black;
+    color: #333;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
 }
 
 .dropdown-header:hover {
@@ -111,12 +150,15 @@ label {
     z-index: 10;
     list-style-type: none;
     padding: 0;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .dropdown-item {
     padding: 10px;
     font-size: 14px;
     cursor: pointer;
+    color: #333;
+    font-weight: 500;
 }
 
 .dropdown-item:hover {
@@ -125,6 +167,8 @@ label {
 
 .placeholder {
     color: #888;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
 }
 
 .contact-info {
@@ -151,11 +195,11 @@ label {
 
 .contact-item .contact-title {
     font-weight: 600;
-    font-family: 'roboto', sans-serif;
+    font-family: "roboto", sans-serif;
 }
 
 .contact-value {
-    color: #5C5C5C;
+    color: #5c5c5c;
 }
 
 @media (max-width: 678px) {
