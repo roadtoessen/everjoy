@@ -3,9 +3,9 @@ import vn from "../locales/vn";
 import _ from "lodash";
 import { store } from "../redux/store";
 
-const getTextWithLang = (keyText) => {
+const getTextWithLang = (keyTexts) => {
   const lang = store.getState()?.lang?.lang;
-  return _.get(lang === "VI" ? vn : en, keyText) || "";
+  return _.get(lang === "VI" ? vn : en, keyTexts) || "";
 };
 
 export { getTextWithLang };
