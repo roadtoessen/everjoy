@@ -14,7 +14,7 @@ const PartnersCarousel = () => {
   return (
     <div className="partners-section">
       <button className="partner-arrow left">
-        <img src={leftIcon} className="partner-arrow-icon" alt="Left Arrow" />
+        <img src={leftIcon} className="partner-arrow-icon" alt="Left Arrows" />
       </button>
 
       <div className="partners-slider">
