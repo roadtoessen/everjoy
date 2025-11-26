@@ -39,8 +39,9 @@ const NewsSection = () => {
         <div className="news-main">
           <div className="news-main-image"></div>
           <p className="news-main-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            “There’s no shortage of creativity in Vietnam. What we lack are
+            bridges”: Vietnam’s blossoming board game design scene goes global
+            via first Road to Essen competition.
           </p>
         </div>
 

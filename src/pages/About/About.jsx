@@ -5,8 +5,6 @@ import everJoyPublishing from "../../assets/ever-joy-publishing.png";
 import everJoyGlobal from "../../assets/ever-joy-global.png";
 import highlightSection from "../../assets/highlight-section.png";
 import bannerShoppe from "../../assets/banner-shoppe.png";
-import brandCollaborationProject1 from "../../assets/brand-collaboration-project-1.png";
-import brandCollaborationProject2 from "../../assets/brand-collaboration-project-2.png";
 import partnersSponsors from "../../assets/partners-sponsors.png";
 import Footer from "../../components/Footer/Footer";
 
@@ -50,19 +48,6 @@ const About = () => {
       </div>
       <div className="banner-shoppe">
         <img src={bannerShoppe} alt="Banner Shoppe" />
-      </div>
-      <div className="brand-collaboration-projects">
-        <h1>Brand Collaboration Projects</h1>
-        <img
-          src={brandCollaborationProject1}
-          alt="Brand Collaboration Project 1"
-          className="project-image-1"
-        />
-        <img
-          src={brandCollaborationProject2}
-          alt="Brand Collaboration Project 2"
-          className="project-image-2"
-        />
       </div>
       <div className="partners-and-sponsors">
         <h1>Our Partners & Sponsors</h1>

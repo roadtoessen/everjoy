@@ -1,6 +1,6 @@
 .competition-banner {
   width: 100%;
-  height: 600px;
+  height: 900px;
   margin-top: -140px;
   background-size: cover;
   background-position: center;
@@ -14,16 +14,15 @@
 }
 
 .competition-banner h1 {
-  font-family: 'anton', sans-serif;
+  font-family: "anton", sans-serif;
   font-weight: 400;
   font-size: 48px;
   margin: 0;
   text-align: left;
 }
 
-
 .competition-banner p {
-  font-family: 'space grotesk', sans-serif;
+  font-family: "space grotesk", sans-serif;
   text-align: left;
   font-size: 12px;
   margin-top: 24px;
@@ -62,6 +61,7 @@
   max-width: 900px;
   justify-self: center;
   margin-top: 80px;
+  background-color: white;
 }
 
 .finalists-road h1 {
@@ -75,53 +75,77 @@
   font-size: 13px;
 }
 
-.finalists-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-  max-width: 900px;
-  justify-self: center;
-  margin-top: 48px;
+.finalists-carousel {
+  max-width: 1000px;
+  margin: 48px auto 0;
+  padding: 0 20px;
 }
 
-.finalists-item {
-  width: calc(33% - 24px);
-  position: relative;
+.glide {
+  perspective: 1500px;
+  padding: 40px 0;
 }
 
-.finalists-item img {
+.glide__track {
+  overflow: visible;
+}
+
+.glide__slides {
+  overflow: visible;
+
+  transform-style: preserve-3d;
+}
+
+.glide__slide {
+  transition: all 0.9s ease;
+
+  transform-style: preserve-3d;
+  padding: 0 10px;
+}
+
+.glide__slide--active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.glide__slide img {
   width: 100%;
-  transition: transform 0.3s ease;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.finalists-item img:hover {
-  transform: scale(1.1);
-}
-
-.finalists-item img:last-child {
-  margin-top: 16px;
-}
-
-.finalists-item-title {
-  position: absolute;
-  bottom: 12px;
-  left: 0;
-  right: 0;
-  font-weight: 700;
-  color: white;
-}
-
-.finalist-arrows {
+.glide__bullets {
   display: flex;
   justify-content: center;
-  margin: 48px 0;
-  gap: 150px;
-  margin-top: 150px;
+  gap: 8px;
+  margin-top: 50px;
+  padding: 10px 0;
+  left: unset !important;
+  transform: unset !important;
+  position: relative !important;
 }
 
-.finalist-arrows img {
+.glide__bullet {
   width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #ccc !important;
+  border: none !important;
+}
+
+.glide__bullet:focus,
+.glide__bullet:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.glide__bullet--active {
+  background-color: #333 !important;
+  transform: scale(1.3);
 }
 
 .thank-you-partners {
@@ -142,18 +166,26 @@
 
 @media (max-width: 768px) {
   .competition-banner {
-    height: 450px;
+    height: 600px;
     padding-top: 80px;
   }
 
   .competition-banner h1 {
     font-size: 32px;
   }
+
+  .finalists-carousel {
+    padding: 0 10px;
+  }
+
+  .glide__slide img {
+    height: 300px;
+  }
 }
 
 @media (max-width: 480px) {
   .competition-banner {
-    height: 400px;
+    height: 600px;
     padding-top: 100px;
   }
 
@@ -161,13 +193,13 @@
     font-size: 30px;
   }
 
-  .finalists-item {
-    width: calc(50% - 32px);
+  .finalists-carousel {
+    padding: 0 5px;
   }
 
-  .finalists-item-title {
-    font-size: 13px;
-    margin: 0 4px;
+  .glide__slide img {
+    height: 250px;
+    border-radius: 6px;
   }
 
   .thank-you-partners {

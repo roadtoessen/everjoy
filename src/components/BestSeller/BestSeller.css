@@ -77,3 +77,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+.product-description p {
+  font-size: 12px;
+  text-align: left;
+}
