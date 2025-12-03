@@ -54,10 +54,10 @@ const Competition = () => {
       partialVisibilityGutter: 30,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 480, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      partialVisibilityGutter: 20,
+      partialVisibilityGutter: 0,
     },
   };
 
@@ -103,12 +103,11 @@ const Competition = () => {
           <Carousel
             responsive={responsive}
             infinite={true}
-            autoPlay={true}
+            // autoPlay={true}
             autoPlaySpeed={4000}
             keyBoardControl={false}
             customTransition="transform 1000ms ease-in-out"
             containerClass="carousel-container"
-            removeArrowOnDeviceType={["mobile"]}
             itemClass="carousel-item"
             centerMode={true}
             showDots={false}

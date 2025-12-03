@@ -164,10 +164,6 @@
   .competition-banner h1 {
     font-size: 32px;
   }
-
-  .carousel-slide img {
-    height: 300px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -176,21 +172,12 @@
     padding-top: 100px;
   }
 
+  .carousel-slide {
+    padding: 0 5px;
+  }
+
   .competition-banner h1 {
     font-size: 30px;
-  }
-
-  .carousel-slide img {
-    height: 250px;
-  }
-
-  .custom-dot-list-style {
-    gap: 6px;
-  }
-
-  .react-multi-carousel-dot button {
-    width: 10px;
-    height: 10px;
   }
 
   .thank-you-partners {
