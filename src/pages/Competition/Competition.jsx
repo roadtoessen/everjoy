@@ -103,8 +103,8 @@ const Competition = () => {
           <Carousel
             responsive={responsive}
             infinite={true}
-            // autoPlay={true}
-            // autoPlaySpeed={4000}
+            autoPlay={true}
+            autoPlaySpeed={4000}
             keyBoardControl={false}
             customTransition="transform 1000ms ease-in-out"
             containerClass="carousel-container"
