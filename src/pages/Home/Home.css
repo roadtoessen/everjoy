@@ -86,35 +86,12 @@
 
 /* Side Images */
 .side-image {
-  overflow: hidden;
-  border-radius: 12px;
+  border-radius: 18px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   aspect-ratio: 3 / 4;
   width: 100%;
-}
-
-.side-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.side-image:hover::before {
-  opacity: 1;
 }
 
 .side-image:hover {
@@ -128,41 +105,20 @@
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
+  border-radius: 16px;
 }
 
 .side-image:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Main Image */
 .main-image {
   position: relative;
-  overflow: hidden;
   border-radius: 18px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
   z-index: 2;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.main-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-.main-image:hover::after {
-  opacity: 1;
 }
 
 .main-image:hover {
@@ -202,11 +158,6 @@
   transform: translateY(20px);
   transition: all 0.4s ease;
   z-index: 3;
-}
-
-.main-image:hover .game-title {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .essen-backdrop {
