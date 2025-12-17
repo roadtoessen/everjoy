@@ -5,10 +5,10 @@ import PartnersCarousel from "../../components/PartnersCarousel/PartnersCarousel
 import essenBackdrop from "../../assets/essen-backdrop.png";
 import BestSeller from "../../components/BestSeller/BestSeller";
 import Footer from "../../components/Footer/Footer";
-import ruleBook from "../../assets/rule_book.png";
+import xamHuongLeft from "../../assets/xam_huong_1.jpg";
 import xamHuong from "../../assets/xam_huong.png";
 import bunny from "../../assets/bunny.png";
-import roadZodiac from "../../assets/road_zodiac.png";
+import bunnyRight from "../../assets/bunny_1.png";
 
 const Home = () => {
   return (
@@ -20,17 +20,30 @@ const Home = () => {
           <section className="hero-content">
             <h1>Highlight Games</h1>
             <div className="highlight-games">
-              <div className="highlight-game-item-container highlight-game-img1">
-                <img src={ruleBook} alt="rule book" />
+              {/* Xam Huong Game - Illustration on LEFT */}
+              <div className="highlight-game-item-container">
+                <div className="game-layout left-layout">
+                  <div className="side-image left">
+                    <img src={xamHuongLeft} alt="xam huong left illustration" />
+                  </div>
+                  <div className="main-image">
+                    <img src={xamHuong} alt="xam huong main" />
+                    <div className="game-title">Xam Huong</div>
+                  </div>
+                </div>
               </div>
-              <div className="highlight-game-item-container highlight-game-img2">
-                <img src={xamHuong} alt="xam huong" />
-              </div>
-              <div className="highlight-game-item-container highlight-game-img3">
-                <img src={bunny} alt="bunny" />
-              </div>
-              <div className="highlight-game-item-container highlight-game-img4">
-                <img src={roadZodiac} alt="road zodiac" />
+
+              {/* Bunny Game - Illustration on RIGHT */}
+              <div className="highlight-game-item-container">
+                <div className="game-layout right-layout">
+                  <div className="main-image">
+                    <img src={bunny} alt="bunny main" />
+                    <div className="game-title">Bunny</div>
+                  </div>
+                  <div className="side-image right">
+                    <img src={bunnyRight} alt="bunny right illustration" />
+                  </div>
+                </div>
               </div>
             </div>
           </section>
