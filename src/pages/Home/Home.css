@@ -292,7 +292,7 @@
   }
 
   .hero-content {
-    padding-top: 120px;
+    padding-top: 160px;
   }
 
   .hero-content h1 {
@@ -302,6 +302,6 @@
 
   .highlight-games {
     padding: 0 10px;
-    gap: 40px;
+    gap: 20px;
   }
 }
