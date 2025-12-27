@@ -64,6 +64,17 @@
   width: 25%;
 }
 
+.card-2 a,
+.card-1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-2 a:hover,
+.card-1 a:hover {
+  text-decoration: underline;
+}
+
 .card-3 {
   background-color: #5b1815;
   border-top-right-radius: 50px;

@@ -10,7 +10,9 @@ const RoadToEssenOverview = () => {
       <div className="overview-cards">
         {/* Card 1 */}
         <div className="overview-card card-1">
-          <h3>ROAD TO ESSEN 2025 COMPETITION</h3>
+          <h3>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/roadtoessen">ROAD TO ESSEN 2025 COMPETITION</a>
+          </h3>
           <p>
             The “Road to Essen” board game competition aims to discover and
             nurture Vietnamese board game design talents from around the world,
@@ -22,7 +24,9 @@ const RoadToEssenOverview = () => {
 
         {/* Card 2 */}
         <div className="overview-card card-2">
-          <h3>YOUR TURN PODCAST</h3>
+          <h3>
+            <a target="_blank" rel="noreferrer" href="https://linktr.ee/podcastYourTurn?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExU1Flc3c1S2hmUlFxUlpaeXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR77nSkVR4CXhS6ReGX0obP9UXwX7TrI1jiv-QyIhGsuqhHmteXxmdEXMKlePA_aem_d_hZLvRr7ghJhn_h4wmcqg">YOUR TURN PODCAST</a>
+          </h3>
           <p>
             A podcast series of 7–10 episodes, featuring interviews with top
             board game creators from around the world and Vietnam, aiming to
